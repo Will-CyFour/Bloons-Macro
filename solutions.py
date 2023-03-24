@@ -2,12 +2,10 @@ import pyautogui as a
 import time
 import tower as t
 
-
 def pos(n):
     for i in range(n):
         time.sleep(1)
         print(a.position())
-
 
 def infernal_deflation():
     time.sleep(5)  # (loading)
@@ -75,15 +73,15 @@ def end_screen():
 
 def grind_infernal():
     warlock_count = 0
-    while True:
+    #while True:
+    for i in range(2):
         infernal_deflation()
 
         end_screen()
 
         warlock_count += 1
-        money = str(warlock_count * 66)
         print(warlock_count)
-        print("$" + money + " made")
+
 
 
 def menu_up():
