@@ -55,7 +55,6 @@ def infernal_deflation():
 
         time.sleep(1)
 
-
 def end_screen():
     a.click(950, 900)  # next
     time.sleep(2)
@@ -73,8 +72,7 @@ def end_screen():
 
 def grind_infernal():
     warlock_count = 0
-    #while True:
-    for i in range(2):
+    while True:
         infernal_deflation()
 
         end_screen()
